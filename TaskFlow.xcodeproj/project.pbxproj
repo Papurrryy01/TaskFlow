@@ -6,11 +6,40 @@
 	objectVersion = 110;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		7308C718307F0ABD0028015A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 73819F27306DE166008ADF35 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 73819F2E306DE166008ADF35;
+			remoteInfo = TaskFlow;
+		};
+		7308C725307F0AC00028015A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 73819F27306DE166008ADF35 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 73819F2E306DE166008ADF35;
+			remoteInfo = TaskFlow;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		7308C714307F0ABD0028015A /* TaskFlowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaskFlowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7308C721307F0AC00028015A /* TaskFlowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaskFlowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		73819F2F306DE166008ADF35 /* TaskFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		7308C715307F0ABD0028015A /* TaskFlowTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = TaskFlowTests;
+			sourceTree = "<group>";
+		};
+		7308C722307F0AC00028015A /* TaskFlowUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = TaskFlowUITests;
+			sourceTree = "<group>";
+		};
 		73819F31306DE166008ADF35 /* TaskFlow */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = TaskFlow;
@@ -19,6 +48,16 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		7308C711307F0ABD0028015A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		7308C71E307F0AC00028015A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
 		73819F2C306DE166008ADF35 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			files = (
@@ -31,6 +70,8 @@
 			isa = PBXGroup;
 			children = (
 				73819F31306DE166008ADF35 /* TaskFlow */,
+				7308C715307F0ABD0028015A /* TaskFlowTests */,
+				7308C722307F0AC00028015A /* TaskFlowUITests */,
 				73819F30306DE166008ADF35 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -39,6 +80,8 @@
 			isa = PBXGroup;
 			children = (
 				73819F2F306DE166008ADF35 /* TaskFlow.app */,
+				7308C714307F0ABD0028015A /* TaskFlowTests.xctest */,
+				7308C721307F0AC00028015A /* TaskFlowUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -46,6 +89,48 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		7308C713307F0ABD0028015A /* TaskFlowTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7308C71C307F0ABD0028015A /* Build configuration list for PBXNativeTarget "TaskFlowTests" */;
+			buildPhases = (
+				7308C710307F0ABD0028015A /* Sources */,
+				7308C711307F0ABD0028015A /* Frameworks */,
+				7308C712307F0ABD0028015A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7308C719307F0ABD0028015A /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				7308C715307F0ABD0028015A /* TaskFlowTests */,
+			);
+			name = TaskFlowTests;
+			productName = TaskFlowTests;
+			productReference = 7308C714307F0ABD0028015A /* TaskFlowTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7308C720307F0AC00028015A /* TaskFlowUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7308C727307F0AC00028015A /* Build configuration list for PBXNativeTarget "TaskFlowUITests" */;
+			buildPhases = (
+				7308C71D307F0AC00028015A /* Sources */,
+				7308C71E307F0AC00028015A /* Frameworks */,
+				7308C71F307F0AC00028015A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7308C726307F0AC00028015A /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				7308C722307F0AC00028015A /* TaskFlowUITests */,
+			);
+			name = TaskFlowUITests;
+			productName = TaskFlowUITests;
+			productReference = 7308C721307F0AC00028015A /* TaskFlowUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		73819F2E306DE166008ADF35 /* TaskFlow */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 73819F3A306DE167008ADF35 /* Build configuration list for PBXNativeTarget "TaskFlow" */;
@@ -74,6 +159,14 @@
 				LastSwiftUpdateCheck = 2700;
 				LastUpgradeCheck = 2700;
 				TargetAttributes = {
+					7308C713307F0ABD0028015A = {
+						CreatedOnToolsVersion = 27.0;
+						TestTargetID = 73819F2E306DE166008ADF35;
+					};
+					7308C720307F0AC00028015A = {
+						CreatedOnToolsVersion = 27.0;
+						TestTargetID = 73819F2E306DE166008ADF35;
+					};
 					73819F2E306DE166008ADF35 = {
 						CreatedOnToolsVersion = 27.0;
 					};
@@ -94,11 +187,23 @@
 			projectRoot = "";
 			targets = (
 				73819F2E306DE166008ADF35 /* TaskFlow */,
+				7308C713307F0ABD0028015A /* TaskFlowTests */,
+				7308C720307F0AC00028015A /* TaskFlowUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		7308C712307F0ABD0028015A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+		7308C71F307F0AC00028015A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
 		73819F2D306DE166008ADF35 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			files = (
@@ -107,6 +212,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		7308C710307F0ABD0028015A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+		7308C71D307F0AC00028015A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
 		73819F2B306DE166008ADF35 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			files = (
@@ -114,7 +229,118 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		7308C719307F0ABD0028015A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 73819F2E306DE166008ADF35 /* TaskFlow */;
+			targetProxy = 7308C718307F0ABD0028015A /* PBXContainerItemProxy */;
+		};
+		7308C726307F0AC00028015A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 73819F2E306DE166008ADF35 /* TaskFlow */;
+			targetProxy = 7308C725307F0AC00028015A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		7308C71A307F0ABD0028015A /* Debug configuration for PBXNativeTarget "TaskFlowTests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				MACOSX_DEPLOYMENT_TARGET = 26.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = CarlosVera.TaskFlowTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TaskFlow.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TaskFlow";
+				XROS_DEPLOYMENT_TARGET = 27.0;
+			};
+			name = Debug;
+		};
+		7308C71B307F0ABD0028015A /* Release configuration for PBXNativeTarget "TaskFlowTests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				MACOSX_DEPLOYMENT_TARGET = 26.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = CarlosVera.TaskFlowTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TaskFlow.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TaskFlow";
+				XROS_DEPLOYMENT_TARGET = 27.0;
+			};
+			name = Release;
+		};
+		7308C728307F0AC00028015A /* Debug configuration for PBXNativeTarget "TaskFlowUITests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				MACOSX_DEPLOYMENT_TARGET = 26.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = CarlosVera.TaskFlowUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_TARGET_NAME = TaskFlow;
+				XROS_DEPLOYMENT_TARGET = 27.0;
+			};
+			name = Debug;
+		};
+		7308C729307F0AC00028015A /* Release configuration for PBXNativeTarget "TaskFlowUITests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				MACOSX_DEPLOYMENT_TARGET = 26.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = CarlosVera.TaskFlowUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_TARGET_NAME = TaskFlow;
+				XROS_DEPLOYMENT_TARGET = 27.0;
+			};
+			name = Release;
+		};
 		73819F38306DE167008ADF35 /* Debug configuration for PBXProject "TaskFlow" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -322,6 +548,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		7308C71C307F0ABD0028015A /* Build configuration list for PBXNativeTarget "TaskFlowTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7308C71A307F0ABD0028015A /* Debug configuration for PBXNativeTarget "TaskFlowTests" */,
+				7308C71B307F0ABD0028015A /* Release configuration for PBXNativeTarget "TaskFlowTests" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		7308C727307F0AC00028015A /* Build configuration list for PBXNativeTarget "TaskFlowUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7308C728307F0AC00028015A /* Debug configuration for PBXNativeTarget "TaskFlowUITests" */,
+				7308C729307F0AC00028015A /* Release configuration for PBXNativeTarget "TaskFlowUITests" */,
+			);
+			defaultConfigurationName = Release;
+		};
 		73819F2A306DE166008ADF35 /* Build configuration list for PBXProject "TaskFlow" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

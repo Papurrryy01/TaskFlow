@@ -1,0 +1,35 @@
+//
+//  DashboardView.swift
+//  TaskFlow
+//
+//  Adapted from the LoginKit reference implementation.
+//
+
+import SwiftUI
+
+struct DashboardView: View {
+    let user: User
+    let onLogout: () -> Void
+
+    var body: some View {
+        VStack(spacing: 12) {
+            Image(systemName: "checkmark.circle.fill")
+                .font(.system(size: 48))
+                .foregroundColor(.green)
+
+            Text("Welcome, \(user.name)")
+                .font(.title2.bold())
+                .accessibilityIdentifier("welcome_label")
+
+            Button("Log Out", role: .destructive) {
+                onLogout()
+            }
+            .buttonStyle(.bordered)
+            .accessibilityIdentifier("logout_button")
+            .padding(.top, 8)
+        }
+        .padding()
+        .navigationTitle("Dashboard")
+        .navigationBarBackButtonHidden(true)
+    }
+}

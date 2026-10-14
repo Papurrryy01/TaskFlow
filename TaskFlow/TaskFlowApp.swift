@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct TaskFlowApp: App {
+    init() {
+        if ProcessInfo.processInfo.arguments.contains("-UITesting-Reset") {
+            SessionStore().clear()
+        }
+    }
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LoginView()
         }
     }
 }
